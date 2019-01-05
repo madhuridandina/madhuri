@@ -1,0 +1,42 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>To Do List
+</title>
+<script>
+    function addItem(){
+        var li = document.createElement("LI");  
+        var input = document.getElementById("add");
+        li.innerHTML = input.value;
+        input.value = "";
+
+        document.getElementById("faves").appendChild(li);
+    }
+</script>
+<input type="text" id="txtbox" >
+<input type="button" id="btnAdd" value="Add" onclick="addItem()">
+</head>
+<body background="rg.gif" background-size='fill'>
+<style>
+body { background-image: 'rg.jpg';
+background-size: cover; }
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+li {font-size : 50;}
+</style>
+<h1> THINGS TO DO </h1>
+<ul> 
+<li> Morning at 6: Jogging </li>
+<li> Morning at 8: Breakfast</li>
+<li> Morning at 10: Office </li>
+<li> Afternoon at 1: Lunch </li>
+<li> Afternoon at 4: Coffee </li>
+<li> Evening at 6: Back home </li>
+<li> Evening at 7: GYM </li> 
+<li> Night at 9: Dinner </li>
+<li> Night at 10: Go To Bed </li>
+</ul>
+</body>
+</html>
+
